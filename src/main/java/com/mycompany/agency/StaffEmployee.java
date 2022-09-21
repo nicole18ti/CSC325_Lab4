@@ -27,11 +27,9 @@ public class StaffEmployee extends StaffMember
         return s;
     }
 
-    //-----------------------------------------------------------------
-    // TODO 4:  Returns the pay rate for this staff employee.
-    //-----------------------------------------------------------------
+
     public double pay()
     {
-       
+       return payRate;
     }
 }
