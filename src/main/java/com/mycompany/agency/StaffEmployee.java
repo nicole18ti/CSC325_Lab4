@@ -8,10 +8,7 @@ public class StaffEmployee extends StaffMember
     protected String socialSecurityNumber;
     protected double payRate;
 
-    //-----------------------------------------------------------------
-    //  TODO 2: Sets up this staff employee with the specified
-    //  information. @todo Nur
-    //-----------------------------------------------------------------
+
     public StaffEmployee(String eName, String eAddress, String ePhone,
             String socSecNumber, double rate)
     {
