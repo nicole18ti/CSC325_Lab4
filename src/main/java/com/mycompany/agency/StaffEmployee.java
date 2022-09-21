@@ -20,13 +20,11 @@ public class StaffEmployee extends StaffMember
         payRate = rate;
     }
 
-    //-----------------------------------------------------------------
-    // TODO 3: complete the implementation of toString to return information 
-    //          about a staff employee as a string.
-    //-----------------------------------------------------------------
+
     public String toString()
     {
-    
+        String s = String.format("Name: %s\nAddress: %s\nPhone: %s\nSocial Security Number: %s\nPayRate: %s", name, address, phone, socialSecurityNumber, payRate);
+        return s;
     }
 
     //-----------------------------------------------------------------
