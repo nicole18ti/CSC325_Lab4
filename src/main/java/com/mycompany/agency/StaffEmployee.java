@@ -2,7 +2,6 @@ package com.mycompany.agency;
 
 
 
-
 public class StaffEmployee extends StaffMember
 {
     protected String socialSecurityNumber;
