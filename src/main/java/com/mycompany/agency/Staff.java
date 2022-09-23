@@ -8,21 +8,14 @@ public class Staff {
         staffList = new StaffMember[6];
 
         // done 1: Add 6 emploees to the staffList
-        StaffMember se1 = new StaffMember("Moaath Alrajab", "202 4th street", "6318482200");
-        StaffMember se2 = new StaffMember("Rinku Sarkar", "50 20th street", "6318485588");
-        StaffMember se3 = new StaffMember("Tifanny chan", "55 1st street", "6312025544");
-        StaffMember se4 = new StaffMember("JOhn doe", "11 20th street", "6318464588");
-        StaffMember se5 = new StaffMember("The Rock", "19 25th street", "6315555588");
-        StaffMember se6 = new StaffMember("Kevin Hart", "80 10th street", "6318489999");
+        staffList[0] = new Executive("Moaath Alrajab", "202 4th street", "6318482200", "555-22-6666", 20);
+        staffList[1] = new StaffEmployee("Rafael S", "19 25th street", "6315555588", "333-51-7893", 40);
+        staffList[2] = new StaffEmployee("Tifanny chan", "55 1st street", "6312025544", "888-5-5252", 10);
+        staffList[3] = new TempEmploee("Rinku Sarkar", "50 20th street", "6318485588", "444-88-6363", 44);
+        staffList[4] = new Intern("JOhn doe", "11 20th street", "6318464588");
+        staffList[5] = new StaffEmployee("Kevin Hart", "80 10th street", "6318489999", "777-85-9658", 50);
 
-        staffList[0] = se1;
-        staffList[1] = se1;
-        staffList[2] = se1;
-        staffList[3] = se1;
-        staffList[4] = se1;
-        staffList[5] = se1;
-        
-        ((Executive) staffList[0]).awardBonus(500.00);
+        ((Executive)staffList[0]).awardBonus(500.00);
 
         ((TempEmploee) staffList[3]).addHours(40);
     }

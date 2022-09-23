@@ -2,7 +2,7 @@ package com.mycompany.agency;
 
 
 
-    // TODO 1: Make TempEmploee a child of StaffEmploee
+    // done 1: Make TempEmploee a child of StaffEmploee
 
 public class TempEmploee extends StaffEmployee
 {
@@ -21,27 +21,32 @@ public class TempEmploee extends StaffEmployee
     }
 
     //-----------------------------------------------------------------
-    // TODO2: Adds the specified number of hours to this employee's
+    // done Adds the specified number of hours to this employee's
     //  accumulated hours.
     //-----------------------------------------------------------------
     public void addHours(int moreHours)
     {
-        
+        this.hoursWorked = hoursWorked + moreHours;
     }
 
     //-----------------------------------------------------------------
-    // TODO3: Computes and returns the pay for this hourly employee.
+    // done Computes and returns the pay for this hourly employee.
     //-----------------------------------------------------------------
+    @Override
     public double pay()
     {
-
-    }
+       return super.payRate * hoursWorked;
+    };
 
     //-----------------------------------------------------------------
-    // TODO4: Returns information about this hourly employee as a string.
+    // done Returns information about this hourly employee as a string.
     //-----------------------------------------------------------------
-    public String toString()
-    {
 
+    @Override
+    public String toString() {
+        return super.toString() + "hours worked: " + hoursWorked;
     }
+
+   
+    
 }
