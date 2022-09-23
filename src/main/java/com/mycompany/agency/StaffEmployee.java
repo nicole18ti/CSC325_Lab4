@@ -16,14 +16,14 @@ public class StaffEmployee extends StaffMember
         payRate = rate;
     }
 
-
+@Override
     public String toString()
     {
         String s = String.format("Name: %s\nAddress: %s\nPhone: %s\nSocial Security Number: %s\nPayRate: %s", name, address, phone, socialSecurityNumber, payRate);
         return s;
     }
 
-
+ @Override
     public double pay()
     {
        return payRate;
